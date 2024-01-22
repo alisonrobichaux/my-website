@@ -1,0 +1,148 @@
+/* RESET SETTINGS */
+body {
+    margin: 0
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  /* -----  HEADER ---- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    height: 4rem;
+    width: 100vw;
+  
+    border: 5px solid #F0ECE3;
+  
+    background-color: #2D4059;
+  }
+  
+  header>div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  img {
+    height: 100%;
+  }
+  
+  h1 {
+    margin-left: 1rem;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;;
+  }
+  
+  nav>a {
+    margin-right: 10px;
+    font-size: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: black;
+    border: 1px solid black;
+    font-size: 16px;
+  }
+
+  /* ---- End of HEADER ---- */
+  
+  /* ---- Start of MAIN ---- */
+  
+  main {
+    min-height: 80vh;
+    min-width: 70vw;
+    background-color: #F0ECE3;
+  }
+  
+  aside {
+    min-height: 80vh;
+    min-width: 15vw;
+    background-color: #EA5455;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+  }
+  
+  body>div {
+    display: flex;
+  }
+  
+  img {
+    padding-left: 40px;
+    width: 500px;
+  }
+  /* --- END OF MAIN --- */
+  
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100vw;
+  
+    border: 5px solid white;
+
+    background-color: #2D4059;
+  }
+
+  footer>div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+
+  /* START OF CSS FOR ABOUT ME PAGE */
+
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color:#596E79;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color:darkslategray;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #F0ECE3;
+    padding: 20px;
+  }
+
+  h2, h5, p {
+    padding-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
