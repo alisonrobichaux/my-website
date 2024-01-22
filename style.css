@@ -1,0 +1,79 @@
+/* RESET SETTINGS */
+body {
+    margin: 0
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  /* -----  HEADER ---- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    height: 4rem;
+    width: 100vw;
+  
+    border: 1px solid black;
+  
+    background-color: rgb(71, 71, 71);
+  }
+  
+  header>div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  img {
+    height: 100%;
+  }
+  
+  h1 {
+    margin-left: 1rem;
+    color: white;
+  }
+  
+  nav>a {
+    margin-right: .7rem;
+    font-size: .7rem;
+    color: rgb(239, 199, 80);
+  }
+  
+  /* ---- End of HEADER ---- */
+  
+  /* ---- Start of MAIN ---- */
+  
+  main {
+    min-height: 80vh;
+    min-width: 70vw;
+    background-color: cadetblue;
+  }
+  
+  aside {
+    min-height: 80vh;
+    min-width: 15vw;
+    background-color: coral;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+  
+    align-items: center;
+  }
+  
+  body>div {
+    display: flex;
+  }
+  
+  /* --- END OF MAIN --- */
+  
+  footer {
+    width: 100vw;
+    background-color: rgb(71, 71, 71);
+    height: 10vh;
+  }
