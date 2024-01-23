@@ -19,7 +19,7 @@ body {
   
     border: 5px solid #F0ECE3;
   
-    background-color: #1C3144;
+    background-color: #065da8;
   }
   
   header>div {
@@ -42,6 +42,7 @@ body {
   
   nav>a {
     margin-right: 10px;
+    padding-right: 10px;
     font-size: 15px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -50,9 +51,8 @@ body {
   }
   
   a:hover {
-    color: black;
-    border: 1px solid black;
-    font-size: 16px;
+    color: yellow;
+    font-size: 22px;
   }
 
   /* ---- End of HEADER ---- */
@@ -94,7 +94,7 @@ body {
   
     border: 5px solid #F0ECE3;
 
-    background-color: #1C3144;
+    background-color: #089558;
   }
 
 
@@ -102,16 +102,29 @@ body {
 
   input[type=text], select, textarea {
     width: 100%;
-    padding: 12px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box; 
     margin-top: 15px; 
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     resize: vertical 
   }
 
+  
+  /*ABOUT ME*/
 
+  img {
+    float: left;
+    margin-right: 10px;
+    clear:both;
+}
+p {
+    margin-left: 0px;
+    overflow:auto;
+    display:block;
+    padding-top: 40px;
+}
 
   /* MY PROJECTS */
 
@@ -121,7 +134,7 @@ body {
   }
 
   .project1, .project2, .project3 {
-        background-color: gray;
+        background-color: white;
         border: 2px solid black;
         width: 700px;
         height: 200px;
