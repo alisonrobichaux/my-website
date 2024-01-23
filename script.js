@@ -1,45 +1,52 @@
-const form = document.getElementById("form");
-const result = document.getElementById("result");
+console.log('Hello World!');
 
-form.addEventListener("submit", function (e) {
-  const formData = new FormData(form);
-  e.preventDefault();
-  var object = {};
-  formData.forEach((value, key) => {
-    object[key] = value;
-  });
-  var json = JSON.stringify(object);
-  result.innerHTML = "Please wait...";
+const form = document.querySelector('#form')
+const submitButton = document.querySelector('#submit')
 
-  fetch("https://api.web3forms.com/submit", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json"
-    },
-    body: json
-  })
-    .then(async (response) => {
-      let json = await response.json();
-      if (response.status == 200) {
-        result.innerHTML = json.message;
-        result.classList.remove("text-gray-500");
-        result.classList.add("text-green-500");
-      } else {
-        console.log(response);
-        result.innerHTML = json.message;
-        result.classList.remove("text-gray-500");
-        result.classList.add("text-red-500");
-      }
-    })
-    .catch((error) => {
-      console.log(error);
-      result.innerHTML = "Something went wrong!";
-    })
-    .then(function () {
-      form.reset();
-      setTimeout(() => {
-        result.style.display = "none";
-      }, 5000);
-    });
-});
+form.addEventListener('submit', (e) => {
+  submitButton.disabled = true
+  e.preventDefault()
+  window.location.href = window.location.origin + '/success.html'
+})
+
+/* CONTACT FORM */
+
+function validate() { 
+    let name = 
+        document.getElementById("name").value; 
+    let subject = 
+        document.getElementById("subject").value; 
+    let phone = 
+        document.getElementById("phone").value; 
+    let email = 
+        document.getElementById("email").value; 
+    let message = 
+        document.getElementById("message").value; 
+    let error_message = 
+        document.getElementById("error_message"); 
+  
+    error_message.style.padding = "10px"; 
+  
+    let errors = []; 
+  
+    if (name.length < 5) { 
+        errors.push("Please Enter a valid Name");} 
+    if (subject.length < 10) { 
+        errors.push("Please Enter a Correct Subject");} 
+    if (isNaN(phone) || phone.length != 10) { 
+        errors.push("Please Enter a valid Phone Number");} 
+    if (email.indexOf("@") == -1 || email.length < 6) { 
+        errors.push( 
+            "Please Enter a valid Email");} 
+    if (message.length <= 40) { 
+        errors.push( 
+            "Please Enter More Than 40 Characters");} 
+  
+    if (errors.length > 0) { 
+        error_message.innerHTML = 
+            errors.join("<br>"); 
+        return false;} 
+    else { 
+        alert( 
+            "Form Submitted Successfully!"); 
+        return true;}}
